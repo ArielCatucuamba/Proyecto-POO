@@ -6,6 +6,7 @@ public class MenuCliente extends JFrame{
     private JButton reservarHabitacionButton;
     private JButton verHabitacionButton;
     private JPanel panel1;
+    private JButton regresarButton;
 
     public MenuCliente(){
         setContentPane(panel1);
@@ -15,6 +16,15 @@ public class MenuCliente extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 VerHabitaciones v1 = new VerHabitaciones();
                 v1.Iniciar();
+                dispose();
+            }
+        });
+        regresarButton.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MenuRoles m2=new MenuRoles();
+                m2.Iniciar();
                 dispose();
             }
         });

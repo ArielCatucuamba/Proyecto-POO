@@ -33,7 +33,7 @@ public class MenuRoles extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                MenuAdministrador m1 = new MenuAdministrador();
+                MenuRoles m1 = new MenuRoles();
                 m1.Iniciar();
                 dispose();
             }
@@ -49,5 +49,12 @@ public class MenuRoles extends JFrame{
 
             }
         });
+    }
+    public void Iniciar(){
+        setVisible(true);
+        setTitle("Creacion de administradores");
+        setSize(500,500);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 }
